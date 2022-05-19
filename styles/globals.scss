@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-ibm {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+.post {
+  @apply overflow-hidden flex flex-col relative;
+
+  .post-image {
+    @apply relative;
+
+  }
+
+  .post-title {
+    height: 68px;
+    @apply font-ibm font-semibold text-gray-600 pt-1 break-words overflow-hidden text-sm;
+  }
+
+  .post-date {
+    @apply mt-2 text-xs font-ibm font-normal text-gray-400;
+  }
+
+}
+
+.btn {
+  @apply w-full px-8 py-2 rounded-full;
+}
+
+.btn-auto {
+  @apply w-auto;
+}
+
+.btn-sky {
+  @apply bg-sky-600 text-white;
+}
