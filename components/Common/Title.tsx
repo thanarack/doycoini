@@ -1,14 +1,25 @@
+import classNames from 'classnames';
+import { useState } from 'react';
+
 type Props = {
   title: string;
+  colorClass?: string;
 };
 
 const Title: React.FC<Props> = (props) => {
-  const { title } = props;
+  const { title, colorClass = 'bg-neutral-200' } = props;
 
   return (
-    <h2 className="text-2xl border-b-4 py-2 font-ibm font-semibold text-gray-600">
-      {title}
-    </h2>
+    <>
+      <h2
+        className={classNames(
+          'text-2xl py-1 font-ibm font-semibold text-neutral-600'
+        )}
+      >
+        {title}
+      </h2>
+      <hr className={classNames(colorClass,'h-1.5 rounded-full border-0')} />
+    </>
   );
 };
 

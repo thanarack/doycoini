@@ -28,9 +28,11 @@ function ThemeComponent({ Component, pageProps, router }: AppProps) {
 
 const MyApp = (props: AppProps) => {
   return (
-    <Provider store={store}>
-      <ThemeComponent {...props} />
-    </Provider>
+    <div className="main-container">
+      <Provider store={store}>
+        <ThemeComponent {...props} />
+      </Provider>
+    </div>
   );
 };
 

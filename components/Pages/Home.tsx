@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import faker from '@faker-js/faker/locale/en';
-import Posts from '../Posts/PostsLists';
+import PostsWidget from '../Posts/PostsWidget';
 import Title from '../Common/Title';
 import LotteryWidget from '../Lottery/LotteryWidget';
+import CryptocurrencyWidget from '../Cryptocurrency/CryptocurrencyWidget';
 
 const Home = (props: any) => {
   const [posts, setPosts] = useState(props.pageProps.mockNews || []);
@@ -12,18 +13,21 @@ const Home = (props: any) => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-6">
           <div className="box-content">
-            <Title title="เหรียญคริปโต" />
-            <div className="h-48"></div>
+            <Title title="เหรียญ, คริปโต" colorClass="bg-amber-500" />
+            <CryptocurrencyWidget />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-6 md:mt-6">
           <div className="box-content">
-            <Title title="ตรวจหวย, ลอตเตอรี่" />
+            <Title title="ตรวจหวย, ลอตเตอรี่" colorClass="bg-rose-600" />
             <LotteryWidget />
           </div>
           <div className="box-content">
-            <Title title="เรื่องน่าสนใจ - การลงทุน" />
-            <Posts data={posts} />
+            <Title
+              title="เรื่องน่าสนใจ, การลงทุน"
+              colorClass="bg-cyan-600"
+            />
+            <PostsWidget data={posts} />
           </div>
         </div>
       </div>

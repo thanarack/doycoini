@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  .main-container {
+    @apply bg-neutral-50;
+  }
+}
+
 .font-ibm {
   font-family: 'IBM Plex Sans Thai', sans-serif;
 }
@@ -18,11 +24,11 @@
 
   .post-title {
     height: 68px;
-    @apply font-ibm font-semibold text-gray-600 pt-1 break-words overflow-hidden text-sm;
+    @apply font-ibm font-semibold text-neutral-600 pt-1 break-words overflow-hidden text-sm;
   }
 
   .post-date {
-    @apply mt-2 text-xs font-ibm font-normal text-gray-400;
+    @apply mt-2 text-xs font-ibm font-normal text-neutral-400;
   }
 
 }
@@ -37,4 +43,72 @@
 
 .btn-sky {
   @apply bg-sky-600 text-white;
+}
+
+#cryptocurrencyWidgetTableData {
+
+  @apply font-ibm;
+
+  tr {
+    td {
+      @apply py-2;
+
+      .changes24 {
+        @apply flex flex-row justify-end gap-1 items-baseline;
+
+        i {
+          svg {
+            @apply h-3 w-3;
+          }
+        }
+      }
+    }
+  }
+}
+
+#chat-widget {
+  @apply font-ibm h-full bg-white rounded-lg shadow-sm flex flex-col overflow-hidden;
+
+  textarea {
+    // @apply h-6;
+  }
+}
+
+.crypto-tags {
+  @apply font-ibm flex flex-row gap-4 justify-center;
+
+  li {
+    @apply shadow bg-neutral-200 rounded-full px-4 py-1 text-sm text-neutral-500 font-medium;
+
+    &.active {
+      @apply bg-sky-600 text-white;
+    }
+  }
+}
+
+#table-data-box {
+  @apply mt-5 overflow-y-scroll;
+  max-height: 390px;
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: .375rem;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    @apply bg-neutral-200;
+    border-radius: .25rem !important;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    @apply bg-neutral-400;
+    border-radius: .25rem !important;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-500;
+  }
 }
