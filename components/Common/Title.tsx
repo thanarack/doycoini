@@ -7,13 +7,13 @@ type Props = {
 };
 
 const Title: React.FC<Props> = (props) => {
-  const { title, colorClass = 'bg-neutral-300' } = props;
+  const { title, colorClass = 'bg-neutral-200' } = props;
 
   return (
     <>
       <h2
         className={classNames(
-          'text-2xl py-1 font-ibm font-semibold text-neutral-600'
+          'text-2xl py-1 font-ibm font-semibold text-neutral-800'
         )}
       >
         {title}
