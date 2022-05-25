@@ -6,7 +6,7 @@
 
 body {
   .main-container {
-    @apply bg-neutral-50;
+    @apply bg-gray-100;
   }
 }
 
@@ -74,6 +74,10 @@ body {
   }
 }
 
+#lottery-widget {
+  @apply font-ibm h-auto bg-white rounded-lg shadow-sm flex flex-col overflow-hidden py-6;
+}
+
 .crypto-tags {
   @apply font-ibm flex flex-row gap-4 justify-center;
 
@@ -92,7 +96,7 @@ body {
 
   /* width */
   &::-webkit-scrollbar {
-    width: .375rem;
+    width: .175rem;
   }
 
   /* Track */
@@ -103,12 +107,12 @@ body {
 
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    @apply bg-neutral-400;
+    @apply bg-neutral-300;
     border-radius: .25rem !important;
   }
 
   /* Handle on hover */
   &::-webkit-scrollbar-thumb:hover {
-    @apply bg-neutral-500;
+    @apply bg-neutral-400;
   }
 }

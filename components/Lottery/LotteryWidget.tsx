@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { GetIcon } from '../../utils/icon';
 
-const LotteryWidget = () => {
+const LotteryWidget = ({ ...rest }) => {
   return (
-    <div className="font-ibm mt-5">
+    <div id="lottery-widget" {...rest}>
       <h3 className="text-center text-3xl font-bold text-neutral-800">
         ตรวจสลากกินแบ่งรัฐบาล
       </h3>
@@ -48,20 +48,28 @@ const LotteryWidget = () => {
           155012
         </label>
       </div>
-      <div className="flex mt-6 flex-row justify-around">
+      <div className="flex mt-6 flex-row justify-around px-3">
         <div className="flex flex-col items-center">
           <label className="text-sm font-semibold text-neutral-500">
             เลขหน้า 3 ตัว
           </label>
-          <label className="text-3xl mt-2 font-bold text-neutral-800">247</label>
-          <label className="text-3xl mt-2 font-bold text-neutral-800">736</label>
+          <label className="text-3xl mt-2 font-bold text-neutral-800">
+            247
+          </label>
+          <label className="text-3xl mt-2 font-bold text-neutral-800">
+            736
+          </label>
         </div>
         <div className="flex flex-col items-center">
           <label className="text-sm font-semibold text-neutral-500">
             เลขหน้า 3 ตัว
           </label>
-          <label className="text-3xl mt-2 font-bold text-neutral-800">236</label>
-          <label className="text-3xl mt-2 font-bold text-neutral-800">540</label>
+          <label className="text-3xl mt-2 font-bold text-neutral-800">
+            236
+          </label>
+          <label className="text-3xl mt-2 font-bold text-neutral-800">
+            540
+          </label>
         </div>
         <div className="flex flex-col items-center">
           <label className="text-sm font-semibold text-neutral-500">

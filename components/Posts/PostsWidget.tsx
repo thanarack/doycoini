@@ -12,8 +12,8 @@ const PostsWidget: React.FC<Props> = (props) => {
   const { data } = props;
 
   return (
-    <>
-      <ul className="mt-5 grid grid-cols-3 gap-4">
+    <div>
+      <ul className="mt-5 grid grid-cols-4 gap-4 gap-y-8">
         {data.map((value: any, index: any) => (
           <li key={index}>
             <Link href={`/p/${index + 1}`} passHref={true}>
@@ -39,7 +39,7 @@ const PostsWidget: React.FC<Props> = (props) => {
       {/* <div className="mt-8 text-center">
               <button className="btn btn-auto btn-sky">ดูเพิ่มเติม</button>
             </div> */}
-    </>
+    </div>
   );
 };
 

@@ -7,7 +7,7 @@ type Props = {
 };
 
 const Title: React.FC<Props> = (props) => {
-  const { title, colorClass = 'bg-neutral-200' } = props;
+  const { title, colorClass = 'bg-neutral-300' } = props;
 
   return (
     <>
@@ -18,7 +18,7 @@ const Title: React.FC<Props> = (props) => {
       >
         {title}
       </h2>
-      <hr className={classNames(colorClass,'h-1.5 rounded-full border-0')} />
+      <hr className={classNames(colorClass,'h-1 rounded-full border-0')} />
     </>
   );
 };

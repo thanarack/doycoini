@@ -15,7 +15,7 @@ const TableData = () => {
         priceBinance: '29413.96',
         priceBitkub: '29413.96',
         priceUpbit: '29413.96',
-        action: '/room-btc',
+        action: '/room-token-btc',
       },
       {
         ranking: '2',
@@ -24,7 +24,7 @@ const TableData = () => {
         priceBinance: '1975.55',
         priceBitkub: '1975.55',
         priceUpbit: '1975.55',
-        action: '/room-eth',
+        action: '/room-token-eth',
       },
       {
         ranking: '3',
@@ -33,7 +33,7 @@ const TableData = () => {
         priceBinance: '32.14',
         priceBitkub: '32.14',
         priceUpbit: '32.14',
-        action: '/room-usdt',
+        action: '/room-token-usdt',
       },
       {
         ranking: '4',
@@ -42,7 +42,7 @@ const TableData = () => {
         priceBinance: '40.95',
         priceBitkub: '40.95',
         priceUpbit: '40.95',
-        action: '/room-usdc',
+        action: '/room-token-usdc',
       },
       {
         ranking: '5',
@@ -51,7 +51,7 @@ const TableData = () => {
         priceBinance: '9895.45',
         priceBitkub: '9895.45',
         priceUpbit: '9895.45',
-        action: '/room-bnb',
+        action: '/room-token-bnb',
       },
       {
         ranking: '6',
@@ -60,7 +60,7 @@ const TableData = () => {
         priceBinance: '63.41',
         priceBitkub: '63.41',
         priceUpbit: '63.41',
-        action: '/room-xrp',
+        action: '/room-token-xrp',
       },
       {
         ranking: '7',
@@ -69,7 +69,7 @@ const TableData = () => {
         priceBinance: '0.0865',
         priceBitkub: '0.0865',
         priceUpbit: '0.0865',
-        action: '/room-doge',
+        action: '/room-token-doge',
       },
       {
         ranking: '8',
@@ -78,7 +78,7 @@ const TableData = () => {
         priceBinance: '31.41',
         priceBitkub: '31.41',
         priceUpbit: '31.41',
-        action: '/room-busd',
+        action: '/room-token-busd',
       },
       {
         ranking: '9',
@@ -87,7 +87,7 @@ const TableData = () => {
         priceBinance: '63.41',
         priceBitkub: '63.41',
         priceUpbit: '63.41',
-        action: '/room-ada',
+        action: '/room-token-ada',
       },
       {
         ranking: '10',
@@ -96,7 +96,7 @@ const TableData = () => {
         priceBinance: '0.000011485',
         priceBitkub: '0.000011485',
         priceUpbit: '0.000011485',
-        action: '/room-shib',
+        action: '/room-token-shib',
       },
       {
         ranking: '11',
@@ -105,7 +105,7 @@ const TableData = () => {
         priceBinance: '0.65',
         priceBitkub: '0.65',
         priceUpbit: '0.65',
-        action: '/room-matic',
+        action: '/room-token-matic',
       },
     ],
     []

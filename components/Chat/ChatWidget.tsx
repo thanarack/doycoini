@@ -14,9 +14,9 @@ const ChatWidget = () => {
   return (
     <div id="chat-widget">
       <div className="flex flex-row justify-between px-3 gap-1 py-2 bg-neutral-200 items-baseline">
-        <div className="text-base font-medium text-neutral-500 flex gap-1 ">
+        {/* <div className="text-base font-medium text-neutral-500 flex gap-1 ">
           <span>กระดานแชทนักลงทุน</span>
-        </div>
+        </div> */}
         <div className="flex gap-1 flex-row items-baseline text-sm">
           <div className="block self-center text-neutral-500">
             <GetIcon mode="outline" name="chevron-left" />
@@ -42,7 +42,7 @@ const ChatWidget = () => {
               />
             </div>
           </div>
-          <div className="col-span-3 bg-neutral-100 border-l">
+          <div className="col-span-3 border-l">
             <div id="chat-users" className="px-2">
               Users
             </div>
