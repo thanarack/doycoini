@@ -3,14 +3,14 @@ const Navigation = () => {
     <div>
       <nav className="font-ibm bg-white border-white px-2 sm:px-4 py-2.5 shadow-sm">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
-          <a href="https://doycoini.com" className="flex items-center">
+          <a href="https://kocoini.com" className="flex items-center">
             <img
               src="/images/logo.svg"
               className="mr-3 h-6 sm:h-9"
-              alt="Doycoini Logo"
+              alt="KOCOINI Logo"
             />
             <span className="self-center text-xl font-semibold whitespace-nowrap text-neutral-800">
-              DOYCOINI
+              KOCOINI
             </span>
           </a>
           <div className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1">

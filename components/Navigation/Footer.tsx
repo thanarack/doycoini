@@ -6,16 +6,16 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a
-            href="https://doycoini.com"
+            href="https://kocoini.com"
             className="flex items-center mb-4 sm:mb-0"
           >
             <img
               src="/images/logo.svg"
               className="mr-3 h-8"
-              alt="Doycoini Logo"
+              alt="KOCOINI Logo"
             />
             <span className="self-center text-2xl text-neutral-800 font-semibold whitespace-nowrap">
-              DOYCOINI
+              KOCOINI
             </span>
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm text-neutral-600 sm:mb-0 font-medium">
@@ -39,8 +39,8 @@ const Footer = () => {
         <hr className="my-6 border-neutral-200 sm:mx-auto lg:my-8" />
         <div className="text-sm font-semibold justify-center text-neutral-600 sm:text-center flex flex-row mx-auto gap-1">
           <span>© 2022</span>
-          <Link href="https://doycoini.com" className="hover:underline">
-            Doycoini
+          <Link href="https://kocoini.com" className="hover:underline">
+            KOCOINI
           </Link>
           <span>. All Rights Reserved.</span>
         </div>
